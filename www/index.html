@@ -7,32 +7,41 @@
 
     <!--THIRD PARTY CSS - AUTOINJECTED BY GULP TASK 'bower' FROM www/lib-->
     <!-- bower:css -->
-    <link rel="stylesheet" href="lib/ionic/css/ionic.css" />
+    <link rel="stylesheet" href="lib/ionic/release/css/ionic.css" />
     <!-- endbower -->
 
     <!--FIRST PARTY CSS - AUTOINJECTED BY GULP TASK 'index' FROM www/css-->
     <!-- inject:css -->
-    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- endinject -->
 
+    <!--THIS ACTIVATES THE PLUGINS-->
+    <script src="cordova.js"></script>
+
   </head>
+
   <body ng-app="starter">
 
+    <!--This is the 'app' state defined in app.js... all views are subs of this one-->
     <ion-nav-view></ion-nav-view>
 
-    <!--THIRD PARY JS - AUTOINJECTED BY GULP TASK 'bower' FROM www/lib-->
     <!-- scripts that wiredep misses -->
     <script src="lib/jquery/dist/jquery.js"></script>
 
+    <!--THIRD PARY JS - AUTOINJECTED BY GULP TASK 'bower' FROM www/lib-->
     <!-- bower:js -->
-    <script src="lib/moment/moment.js"></script>
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular-animate/angular-animate.js"></script>
     <script src="lib/angular-sanitize/angular-sanitize.js"></script>
     <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="lib/ionic/js/ionic.js"></script>
-    <script src="lib/ionic/js/ionic-angular.js"></script>
+    <script src="lib/ionic/release/js/ionic.js"></script>
+    <script src="lib/ionic/release/js/ionic-angular.js"></script>
+    <script src="lib/ionic-service-core/ionic-core.js"></script>
+    <script src="lib/ionic-service-deploy/ionic-deploy.js"></script>
+    <script src="lib/ionic-service-analytics/ionic-analytics.js"></script>
+    <script src="lib/moment/moment.js"></script>
     <script src="lib/jquery-ui/jquery-ui.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
     <!-- endbower -->
 
     <!--FIRST PARTY JS - AUTOINJECTED BY GULP TASK 'index' FROM www/js-->

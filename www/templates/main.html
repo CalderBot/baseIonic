@@ -1,7 +1,14 @@
-<ion-view ng-class="{'sleep':!sleep, 'wake':sleep}">
-  <ion-content scroll="false" >
+<ion-view >
+  <ion-content class="main-content" scroll="false">
+    <div ng-show="!sleep" class="background-photo" ng-style="{'background-image':'url({{sleepUrl}})'}"></div>
+    <div ng-show="sleep" class="background-photo" ng-style="{'background-image':'url({{wakeUrl}})'}"></div>
     <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
-    <button class="button button-icon button-clear ion-navicon" ng-click="sleep = !sleep"></button>
-    <h1>{{sleep}}</h1>
+
+    <div class="bar bar-footer main-footer">
+      <button class="button button-clear" ng-click="sleepSetup()">{{sleepFrom}}</button>
+      <div class="title">&#x27f5 sleep &#x27f6</div>
+      <button class="button button-clear" ng-click="sleep = !sleep">{{sleepUntil}}</button>
+    </div>
+
   </ion-content>
 </ion-view>

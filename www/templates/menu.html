@@ -3,14 +3,14 @@
   <!-- Left menu -->
   <ion-side-menu side="left">
     <ion-list>
-      <ion-item menu-close ng-click="login()">
-        Login
+      <!--<ion-item menu-close ng-click="login()">-->
+        <!--Login-->
+      <!--</ion-item>-->
+      <ion-item menu-close href="#/app/main">
+        Main View
       </ion-item>
-      <ion-item menu-close href="#/app/search">
-        Search
-      </ion-item>
-      <ion-item menu-close href="#/app/browse">
-        Browse
+      <ion-item menu-close href="#/app/photos">
+        Photos
       </ion-item>
       <ion-item menu-close href="#/app/playlists">
         Playlists
@@ -20,14 +20,16 @@
 
   <!--Main Content-->
   <ion-side-menu-content>
-    <ion-nav-bar class="bar-stable">
-      <ion-nav-back-button></ion-nav-back-button>
-      <ion-nav-buttons side="left">
-        <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
-      </ion-nav-buttons>
-    </ion-nav-bar>
-    <ion-nav-buttons side="left">
-    </ion-nav-buttons>
+    <!--HEADER BAR-->
+    <!--<ion-nav-bar class="bar-stable">-->
+      <!--<ion-nav-back-button></ion-nav-back-button>-->
+      <!--<ion-nav-buttons side="left">-->
+        <!--<button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>-->
+      <!--</ion-nav-buttons>-->
+    <!--</ion-nav-bar>-->
+    <!--<ion-nav-buttons side="left">-->
+    <!--</ion-nav-buttons>-->
+    <!--MAIN VIEW INJECTION POINT-->
     <ion-nav-view name="menuContent"></ion-nav-view>
   </ion-side-menu-content>
 

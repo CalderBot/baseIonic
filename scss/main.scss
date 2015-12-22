@@ -1,0 +1,19 @@
+.main-content{
+  .background-photo{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-size: 100% 100%;
+    z-index:-1;
+  }
+  .main-footer{
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(50,50,50,1)), to(rgba(80,80,80,0)));
+    .title {
+      font-weight: 300;
+      font-size: 20px;
+      color: #b2b2b2;
+    }
+  }
+}
