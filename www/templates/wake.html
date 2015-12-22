@@ -1,0 +1,7 @@
+<ion-view ng-class="{'sleep':!sleep, 'wake':sleep}">
+  <ion-content scroll="false" >
+    <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+    <button class="button button-icon button-clear ion-navicon" ng-click="sleep = !sleep"></button>
+    <h1>{{sleep}}</h1>
+  </ion-content>
+</ion-view>

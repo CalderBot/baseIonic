@@ -23,7 +23,17 @@
     "cordova-plugin-console",
     "cordova-plugin-whitelist",
     "cordova-plugin-splashscreen",
-    "com.ionic.keyboard"
+    {
+      "locator": "https://github.com/SidneyS/cordova-plugin-nativeaudio.git",
+      "id": "de.neofonie.cordova.plugin.nativeaudio"
+    },
+    "org.apache.cordova.battery-status",
+    {
+      "locator": "https://github.com/VitaliiBlagodir/cordova-plugin-datepicker.git",
+      "id": "cordova-plugin-datepicker"
+    },
+    "org.apache.cordova.camera",
+    "ionic-plugin-keyboard"
   ],
   "cordovaPlatforms": [
     "ios"

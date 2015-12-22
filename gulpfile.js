@@ -33,7 +33,7 @@ gulp.task('watch', function() {
 
 // add bower components to index (in the order listed in bower.json dependencies)
 gulp.task('bower', function () {
-  console.log("running bower task...")
+  console.log("Running bower task.  Adds bower components to index in the order listed in bower.json dependencies...")
   gulp.src('./www/index.html')
     .pipe(wiredep())
     .pipe(gulp.dest('./www'));
@@ -42,6 +42,7 @@ gulp.task('bower', function () {
 
 // add first party js and css to index
 gulp.task('index', function(){
+  console.log("Running index task.  Adds /www/js/**/*.js and www/css/**/*.css to index...")
   return gulp.src('./www/index.html')
     .pipe(inject(
       gulp.src(paths.javascript,
